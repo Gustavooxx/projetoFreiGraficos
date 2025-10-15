@@ -21,7 +21,6 @@ ChartJS.register(
   Legend
 )
 
-// Theme colors: blue and soft orange
 const BLUE = 'rgba(7, 27, 114, 1)'
 const BLUE_BG = 'rgba(54,162,235,0.12)'
 const ORANGE = 'rgba(255,159,64,1)'
