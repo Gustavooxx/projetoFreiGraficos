@@ -21,24 +21,19 @@ ChartJS.register(
   Legend
 )
 
-/**
- * SquareChart
- * Expects prop `records` as array of objects:
- * { _id: { courseName, periodName }, totalInscritos }
- */
+
 export default function SquareChart({ records, options }) {
   const parsed = Array.isArray(records) ? records.map(r => {
-    const course = r._id?.courseName ?? r.courseName ?? 'Unknown'
-    const period = r._id?.periodName ?? r.periodName ?? ''
+    const course = (r._id?.courseName ?? r.courseName ?? 'Unknown').replace(/\r/g, '').trim()
+    const period = (r._id?.periodName ?? r.periodName ?? '').replace(/\r/g, '').trim()
     const label = `${course} - ${period}`.trim()
-    const value = r.totalInscritos ?? r.total ?? 0
+    const value = r._id?.totalInscritos ?? r.totalInscritos ?? r.total ?? 0
     return { label, value }
   }) : []
 
   const labels = parsed.map(p => p.label)
   const values = parsed.map(p => p.value)
 
-  // palette: blue and soft orange
   const BLUE = 'rgba(13, 18, 174, 1)'
   const BLUE_BG = 'rgba(14, 3, 88, 1)'
   const ORANGE = 'rgba(255,159,64,1)'

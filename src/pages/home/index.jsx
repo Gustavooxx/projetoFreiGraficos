@@ -20,18 +20,32 @@ const records = [
 ]
 
 const inscritos = [
-  { _id: { courseName: 'Administração', periodName: 'Manhã' }, totalInscritos: 32 },
-  { _id: { courseName: 'Administração', periodName: 'Tarde ' }, totalInscritos: 49 },
-  { _id: { courseName: 'Automação Residencial e Robótica', periodName: 'Manhã' }, totalInscritos: 4 },
-  { _id: { courseName: 'Automação Residencial e Robótica', periodName: 'Tarde ' }, totalInscritos: 5 },
-  { _id: { courseName: 'Informática', periodName: 'Manhã' }, totalInscritos: 31 },
-  { _id: { courseName: 'Informática', periodName: 'Tarde ' }, totalInscritos: 49 },
-  { _id: { courseName: 'Inglês Básico - Pré Intermediário (Diurno)', periodName: 'Manhã 1' }, totalInscritos: 30 },
-  { _id: { courseName: 'Inglês Básico - Pré Intermediário (Diurno)', periodName: 'Manhã 2' }, totalInscritos: 20 },
-  { _id: { courseName: 'Inglês Básico - Pré Intermediário (Diurno)', periodName: 'Tarde 1' }, totalInscritos: 51 },
-  { _id: { courseName: 'Inglês Básico - Pré Intermediário (Diurno)', periodName: 'Tarde 2 ' }, totalInscritos: 24 },
-  { _id: { courseName: 'Inglês Intermediário (Sábados)', periodName: 'Manhã' }, totalInscritos: 93 },
-  { _id: { courseName: 'Inglês Pré Intermediário (Noturno)', periodName: 'Noite' }, totalInscritos: 14 }
+ {_id:{ courseName: "Administração", periodName: "Manhã", totalInscritos: 47 }},
+{_id:{ courseName: "Administração", periodName: "Tarde ", totalInscritos: 71 }},
+{_id:{ courseName: "Automação Residencial e Robótica", periodName: "Manhã", totalInscritos: 6 }},
+{_id:{ courseName: "Automação Residencial e Robótica", periodName: "Tarde ", totalInscritos: 7 }},
+{_id:{ courseName: "Comunicação Visual", periodName: "Manhã", totalInscritos: 24 }},
+{_id:{ courseName: "Comunicação Visual", periodName: "Tarde", totalInscritos: 18 }},
+{_id:{ courseName: "Eletromecânica de Autos\r", periodName: "Manhã", totalInscritos: 10 }},
+{_id:{ courseName: "Eletromecânica de Autos\r", periodName: "Tarde", totalInscritos: 19 }},
+{_id:{ courseName: "Informática", periodName: "Manhã", totalInscritos: 45 }},
+{_id:{ courseName: "Informática", periodName: "Tarde ", totalInscritos: 70 }},
+{_id:{ courseName: "Informática Básica - Excel (Noturno)", periodName: "Noite", totalInscritos: 1 }},
+{_id:{ courseName: "Inglês Avançado\r (Sábados)", periodName: "Manhã", totalInscritos: 33 }},
+{_id:{ courseName: "Inglês Básico (Noturno)\r", periodName: "Noite", totalInscritos: 55 }},
+{_id:{ courseName: "Inglês Básico - Pré Intermediário (Diurno)", periodName: "Manhã 1", totalInscritos: 38 }},
+{_id:{ courseName: "Inglês Básico - Pré Intermediário (Diurno)", periodName: "Manhã 2", totalInscritos: 25 }},
+{_id:{ courseName: "Inglês Básico - Pré Intermediário (Diurno)", periodName: "Tarde 1", totalInscritos: 64 }},
+{_id:{ courseName: "Inglês Básico - Pré Intermediário (Diurno)", periodName: "Tarde 2 ", totalInscritos: 29 }},
+{_id:{ courseName: "Inglês Intermediário (Sábados)", periodName: "Manhã", totalInscritos: 140 }},
+{_id:{ courseName: "Inglês Pré Intermediário (Noturno)", periodName: "Noite", totalInscritos: 20 }},
+{_id:{ courseName: "Inglês Teens I (Diurno)", periodName: "Manhã", totalInscritos: 1 }},
+{_id:{ courseName: "Inglês Teens I (Diurno)", periodName: "Manhã I", totalInscritos: 36 }},
+{_id:{ courseName: "Inglês Teens I (Diurno)", periodName: "Manhã II", totalInscritos: 13 }},
+{_id:{ courseName: "Inglês Teens I (Diurno)", periodName: "Tarde I", totalInscritos: 72 }},
+{_id:{ courseName: "Inglês Teens I (Diurno)", periodName: "Tarde II", totalInscritos: 31 }},
+{_id:{ courseName: "Inglês Teens II (Diurno)", periodName: "Manhã II", totalInscritos: 18 }},
+{_id:{ courseName: "Inglês Teens II (Diurno)", periodName: "Tarde II", totalInscritos: 51 }}
 ]
 
 export default function Website(){
@@ -42,7 +56,7 @@ export default function Website(){
             <LineChart records={records} />
 
             <hr style={{ margin: '40px 0' }} />
-            <h2>Inscritos por curso e período</h2>
+            <h2>Inscrições por curso e período</h2>
             <p>Gráfico de barras (retângulos) mostrando total de inscritos por curso+período.</p>
             <SquareChart records={inscritos} />
 
