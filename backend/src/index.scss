@@ -1,0 +1,26 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(175deg, #000000 0%, #050974 130%);
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+
+  h1{
+    font-weight: bold;
+    color: #ff8000;
+  }
+
+  h2{
+    font-size: 32px;
+    color:#ff8000 ;
+  }
+
+  p{
+    font-size: 19px;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "projetofreigraficos",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,18 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "chart.js": "^4.4.0",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "init": "^0.1.2",
-    "mysql2": "^3.15.2",
-    "nodemon": "^3.1.10",
-    "package.json": "^2.0.1",
     "react": "^19.1.1",
-    "react-chartjs-2": "^5.2.0",
-    "react-dom": "^19.1.1",
-    "react-router": "^7.9.4",
-    "sass": "^1.93.2"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
